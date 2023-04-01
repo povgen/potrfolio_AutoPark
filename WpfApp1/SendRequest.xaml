@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp1.SendRequest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Подать заявку" Height="241.208" Width="305.191">
+    <Grid>
+        <ComboBox x:Name="Brands" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="131,16,0,0" SelectionChanged="Brands_SelectionChanged"/>
+        <ComboBox x:Name="Models" HorizontalAlignment="Left" Margin="131,43,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Models_SelectionChanged"/>
+        <Label Content="Марка" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top"/>
+        <Label Content="Модель" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="period" HorizontalAlignment="Left" Height="23" Margin="132,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Period_TextChanged_1"/>
+        <Label Content="Срок ареды" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top"/>
+        <Button Content="Арендовать" HorizontalAlignment="Left" Margin="131,158,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+        <Label Content="Стоимость аренды:" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Cost" HorizontalAlignment="Left" Height="23" Margin="131,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Label Content="№ Машины" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="Autos" HorizontalAlignment="Left" Margin="131,71,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
